@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: auto;
+}
+
+#me {
+  background-image: url("../src/pict/gamerBackground.jpg");
+}
+#me .navbar {
+  align-items: center;
+  justify-content: space-between;
+}
+#me .navbar .navbar-brand {
+  font-family: fastHand;
+  margin-left: 10px;
+  font-size: 2em;
+  padding: 7px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+}
+#me .navbar .navbar-nav .nav-link {
+  color: azure;
+  font-family: linkStart;
+  letter-spacing: 6px;
+  font-size: 1.6em;
+  margin-left: 20px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+#me .navbar .navbar-nav .nav-link:hover {
+  color: darkred;
+}
+#me .navbar #btnBars {
+  background: transparent;
+  border: transparent;
+  font-size: 1.6em;
+  display: none;
+}
+#me .myProfil {
+  color: rgb(165, 8, 165);
+  height: 700px;
+  text-align: center;
+  position: relative;
+  top: -30%;
+  left: 0%;
+  transform: translate(0%, 35%);
+}
+#me .myProfil .myName {
+  width: 35%;
+  display: block;
+  margin: auto;
+  background-color: #171a21;
+  border: 1px solid black;
+  border-radius: 40px;
+  font-family: emizen;
+  letter-spacing: 6px;
+  font-size: 3.2em;
+}
+#me .myProfil .myJobs {
+  font-size: 1.9em;
+  font-family: olney;
+  color: rgb(0, 0, 87);
+  text-shadow: 1px 2px 0px rgba(92, 11, 0, 0.274);
+}
+
+.aboutMe {
+  background-color: rgb(31, 31, 31);
+}
+.aboutMe .about {
+  padding-top: 5px;
+  color: azure;
+  font-size: 2.1em;
+  text-align: center;
+  font-family: emizen;
+  letter-spacing: 4px;
+}
+.aboutMe #myStory {
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutMe #myStory img {
+  width: 100%;
+  height: auto;
+  height: 600px;
+}
+.aboutMe .meIdentify {
+  color: white;
+  line-height: 65px;
+}
+.aboutMe .meIdentify .describeMe {
+  font-family: olney;
+  font-size: 1.6em;
+  letter-spacing: 2px;
+}
+
+#myProjets {
+  margin: -16px auto;
+  padding: 10px 0px 30px 0px;
+  background-color: rgb(48, 48, 48);
+}
+#myProjets .nameProjet {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+#myProjets #listProjets {
+  margin: 20px auto;
+  text-align: center;
+}
+#myProjets .lienProjets {
+  text-align: center;
+}
+#myProjets .lienProjets .lien {
+  color: azure;
+  font-weight: bold;
+  text-decoration: none;
+}
+#myProjets .lienProjets .lien:hover {
+  color: darkred;
+}
+
+.Capacity {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-image: url(../src/pict/capacityBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Capacity .mySuperPower {
+  color: azure;
+  margin: 5px auto;
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: emizen;
+}
+.Capacity #myListCapacities {
+  margin: 20px auto;
+}
+.Capacity #myListCapacities .nameFrameworks {
+  color: azure;
+  font-family: linkStart;
+  letter-spacing: 6px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.Capacity #myListCapacities .listFrameworks {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.Capacity #myListCapacities .listFrameworks .langageCode {
+  color: azure;
+  font-size: 1.3em;
+  font-family: olney;
+}
+.Capacity #myListCapacities .listFrameworks .capacityCode {
+  color: azure;
+  font-size: 1.2em;
+}
+.Capacity #myListCapacities .myCV {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.Capacity #myListCapacities .myCV .img-fluid {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+.Capacity #myListCapacities .myCV #btnDownload {
+  width: 45%;
+  padding: 10px;
+  color: azure;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  font-family: olney;
+  border-radius: 40px;
+  border: 1px solid black;
+  background-color: darkred;
+  transition: all 0.25ms ease;
+}
+.Capacity #myListCapacities .myCV #btnDownload:active {
+  transform: translateY(8px);
+}
+.Capacity #myListCapacities .myCV #btnDownload a {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+#contact {
+  margin-top: -20px;
+  padding: 20px;
+  background-image: url(../src/pict/contactBackground.jpeg);
+}
+#contact .titleContact {
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: emizen;
+  color: azure;
+}
+#contact .contactModal {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 40px;
+  background-color: black;
+  border: 1px solid black;
+  padding: 20px;
+}
+#contact .contactModal #youContact #contactMe {
+  margin-left: 10px;
+  text-align: center;
+}
+#contact .contactModal #youContact input[type=text],
+#contact .contactModal #youContact textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 710px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+#contact .contactModal #youContact input[type=text]::-moz-placeholder, #contact .contactModal #youContact textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#contact .contactModal #youContact input[type=text]::placeholder,
+#contact .contactModal #youContact textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#contact .contactModal #youContact textarea {
+  resize: none;
+  height: 200px;
+}
+#contact .contactModal #myListContact {
+  display: block;
+  margin: 15px auto;
+  line-height: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#contact .contactModal #myListContact p {
+  color: azure;
+  font-size: 1.3em;
+  font-family: olney;
+}
+#contact .contactModal #myListContact .fa-regular, #contact .contactModal #myListContact .fa-solid {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.6em;
+  width: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
+}
+#contact .contactModal #myListContact .fa-phone, #contact .contactModal #myListContact .fa-envelope, #contact .contactModal #myListContact .fa-linkedin-in {
+  color: azure;
+}
+#contact .contactModal #myListContact .fa-brands {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.6em;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
+}
+#contact .contactModal #btnSend {
+  display: block;
+  margin: 0 auto;
+  margin-top: -20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: darkred;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.25ms ease;
+}
+#contact .contactModal #btnSend:active {
+  transform: translateY(8px);
+  background-color: #075509;
+}
+
+@font-face {
+  font-family: emizen;
+  src: url(fonts/Emizen.otf);
+}
+@font-face {
+  font-family: linkStart;
+  src: url(fonts/LinkStart.otf);
+}
+@font-face {
+  font-family: RoundControl;
+  src: url(fonts/RoundControl.otf);
+}
+@font-face {
+  font-family: olney;
+  src: url(fonts/OlneyLigth.otf);
+}
+@font-face {
+  font-family: fastHand;
+  src: url(fonts/FastHand.otf);
+}/*# sourceMappingURL=index.css.map */
