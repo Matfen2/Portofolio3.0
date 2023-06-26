@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../pict/pictsMe/CV Mathieu FENOUIL.jpg";
+import CV from "../pict/pictsMe/CV MATHIEU FENOUIL.jpg";
 
 // FRONT-END
 import htmlLogo from "../pict/myCodeLearn/htmlLogo.png";
@@ -199,7 +199,7 @@ export default function Capacity() {
               />
               <button type="button" id="btnDownload">
                 <a
-                  href="src/myPictures/CV Mathieu FENOUIL.jpg"
+                  href="../pict/pictsMe/CV MATHIEU FENOUIL.jpg"
                   class="text-white"
                   download="CV Mathieu FENOUIL.png"
                 >

@@ -216,54 +216,66 @@ body {
   text-decoration: none;
 }
 
-#starfield .modal-dialog .modal-content, #wellife .modal-dialog .modal-content {
+#starfield .modal-dialog .modal-content, #wellife .modal-dialog .modal-content, #eaglePC .modal-dialog .modal-content {
   color: azure;
   background-image: url(../src/pict/modalBackground.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-#starfield .modal-dialog .modal-content .btn-close, #wellife .modal-dialog .modal-content .btn-close {
+#starfield .modal-dialog .modal-content .btn-close, #wellife .modal-dialog .modal-content .btn-close, #eaglePC .modal-dialog .modal-content .btn-close {
   position: relative;
   top: 10px;
   left: 10px;
 }
-#starfield .modal-dialog .modal-content .modal-header, #wellife .modal-dialog .modal-content .modal-header {
+#starfield .modal-dialog .modal-content .modal-header, #wellife .modal-dialog .modal-content .modal-header, #eaglePC .modal-dialog .modal-content .modal-header {
   border: transparent;
 }
-#starfield .modal-dialog .modal-content .modal-header .modal-title, #wellife .modal-dialog .modal-content .modal-header .modal-title {
+#starfield .modal-dialog .modal-content .modal-header .modal-title, #wellife .modal-dialog .modal-content .modal-header .modal-title, #eaglePC .modal-dialog .modal-content .modal-header .modal-title {
   letter-spacing: 4px;
   font-family: emizen;
   font-size: 1.6em;
 }
-#starfield .modal-dialog .modal-content .modal-body, #wellife .modal-dialog .modal-content .modal-body {
+#starfield .modal-dialog .modal-content .modal-body, #wellife .modal-dialog .modal-content .modal-body, #eaglePC .modal-dialog .modal-content .modal-body {
   border: transparent;
 }
-#starfield .modal-dialog .modal-content .modal-body .img-fluid, #wellife .modal-dialog .modal-content .modal-body .img-fluid {
+#starfield .modal-dialog .modal-content .modal-body .img-fluid, #wellife .modal-dialog .modal-content .modal-body .img-fluid, #eaglePC .modal-dialog .modal-content .modal-body .img-fluid {
   height: 550px;
 }
-#starfield .modal-dialog .modal-content .modal-body .drivers, #wellife .modal-dialog .modal-content .modal-body .drivers {
+#starfield .modal-dialog .modal-content .modal-body .drivers, #wellife .modal-dialog .modal-content .modal-body .drivers, #eaglePC .modal-dialog .modal-content .modal-body .drivers {
   font-family: olney;
   font-size: 1.6em;
 }
-#starfield .modal-dialog .modal-content .modal-body .langages, #wellife .modal-dialog .modal-content .modal-body .langages {
+#starfield .modal-dialog .modal-content .modal-body .langages, #wellife .modal-dialog .modal-content .modal-body .langages, #eaglePC .modal-dialog .modal-content .modal-body .langages {
   display: flex;
   flex-direction: row;
   line-height: 80px;
   padding: 10px;
   justify-content: space-between;
 }
-#starfield .modal-dialog .modal-content .modal-body .langages .list .codes, #wellife .modal-dialog .modal-content .modal-body .langages .list .codes {
+#starfield .modal-dialog .modal-content .modal-body .langages .list .codes, #wellife .modal-dialog .modal-content .modal-body .langages .list .codes, #eaglePC .modal-dialog .modal-content .modal-body .langages .list .codes {
   font-size: 1.5em;
   font-family: linkStart;
 }
-#starfield .modal-dialog .modal-content .modal-footer, #wellife .modal-dialog .modal-content .modal-footer {
+#starfield .modal-dialog .modal-content .modal-footer, #wellife .modal-dialog .modal-content .modal-footer, #eaglePC .modal-dialog .modal-content .modal-footer {
   border: transparent;
+  display: flex;
+  flex-direction: column;
 }
-#starfield .modal-dialog .modal-content .modal-footer p, #wellife .modal-dialog .modal-content .modal-footer p {
+#starfield .modal-dialog .modal-content .modal-footer .langageUse p, #wellife .modal-dialog .modal-content .modal-footer .langageUse p, #eaglePC .modal-dialog .modal-content .modal-footer .langageUse p {
   margin-right: 15px;
   margin-left: 15px;
-  font-size: 1.3em;
+  font-size: 1.6em;
+  font-family: olney;
+}
+#starfield .modal-dialog .modal-content .modal-footer .hrefShowSite, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite {
+  display: flex;
+  flex-direction: row;
+}
+#starfield .modal-dialog .modal-content .modal-footer .hrefShowSite p, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite p, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite p {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 1.4em;
   font-family: olney;
 }
 

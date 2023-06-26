@@ -236,7 +236,7 @@ body {
 
 // MODAL
 // STARFIELD
-#starfield, #wellife {
+#starfield, #wellife, #eaglePC {
   .modal-dialog {
     .modal-content {
       color: azure;
@@ -286,11 +286,23 @@ body {
       }
       .modal-footer {
         border: transparent;
-        p {
-          margin-right: 15px;
-          margin-left: 15px;
-          font-size: 1.3em;
-          font-family: olney;
+        @include flex (column);
+        .langageUse {
+          p {
+            margin-right: 15px;
+            margin-left: 15px;
+            font-size: 1.6em;
+            font-family: olney;
+          }
+        }
+        .hrefShowSite {
+          @include flex (row);
+          p {
+            margin-right: 15px;
+            margin-left: 15px;
+            font-size: 1.4em;
+            font-family: olney;
+          }
         }
       }
     }
