@@ -1,5 +1,5 @@
 import React from 'react'
-import starfieldLogo from '../pict/myProjets/starfieldLogo.jpeg'
+import starfieldLogo from '../pict/myProjets/starfieldLogo.png'
 import wellifeLogo from '../pict/myProjets/wellifeLogo.png'
 import eaglePcLogo from '../pict/myProjets/EaglePCLogo.png'
 

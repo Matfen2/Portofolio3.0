@@ -4,6 +4,7 @@ import AboutMe from './AboutMe'
 import Capacity from './Capacity'
 import MyProjets from './MyProjets'
 import Contact from './Contact'
+import Modal from './Modal'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Capacity />
         <MyProjets />
         <Contact />
+        <Modal />
     </div>
   )
 }

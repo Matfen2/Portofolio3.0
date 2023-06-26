@@ -108,21 +108,37 @@ body {
   background-color: rgb(48, 48, 48);
 }
 #myProjets .nameProjet {
+  color: azure;
+  margin: 5px auto;
   text-align: center;
-  font-size: 2.1em;
-  font-weight: bold;
+  letter-spacing: 4px;
+  font-family: emizen;
 }
 #myProjets #listProjets {
   margin: 20px auto;
   text-align: center;
 }
+#myProjets #listProjets .col-lg-4 img.img-fluid {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+#myProjets #listProjets .col-lg-4 img.img-fluid:hover {
+  opacity: 0.5;
+}
 #myProjets .lienProjets {
   text-align: center;
 }
 #myProjets .lienProjets .lien {
+  font-size: 1.8em;
   color: azure;
   font-weight: bold;
+  letter-spacing: 3px;
   text-decoration: none;
+  font-family: linkStart;
 }
 #myProjets .lienProjets .lien:hover {
   color: darkred;
@@ -146,38 +162,40 @@ body {
 .Capacity #myListCapacities {
   margin: 20px auto;
 }
-.Capacity #myListCapacities .nameFrameworks {
-  color: azure;
-  font-family: linkStart;
-  letter-spacing: 6px;
-  font-size: 1.8em;
-  font-weight: bold;
+.Capacity #myListCapacities .col-lg-8 {
+  padding: 20px;
+  line-height: 80px;
 }
-.Capacity #myListCapacities .listFrameworks {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-.Capacity #myListCapacities .listFrameworks .langageCode {
+.Capacity #myListCapacities .col-lg-8 .frontEnd, .Capacity #myListCapacities .col-lg-8 .backEnd {
+  font-size: 1.7em;
   color: azure;
-  font-size: 1.3em;
   font-family: olney;
 }
-.Capacity #myListCapacities .listFrameworks .capacityCode {
-  color: azure;
-  font-size: 1.2em;
+.Capacity #myListCapacities .col-lg-8 .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
 }
-.Capacity #myListCapacities .myCV {
+.Capacity #myListCapacities .col-lg-8 .swiper-pagination-bullet-active {
+  color: #000000;
+  background: #ffffff;
+}
+.Capacity #myListCapacities .col-lg-4 .myCV {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-.Capacity #myListCapacities .myCV .img-fluid {
+.Capacity #myListCapacities .col-lg-4 .myCV .img-fluid {
   max-width: 100%;
   height: auto;
   border: 1px solid black;
 }
-.Capacity #myListCapacities .myCV #btnDownload {
+.Capacity #myListCapacities .col-lg-4 .myCV #btnDownload {
   width: 45%;
   padding: 10px;
   color: azure;
@@ -190,12 +208,63 @@ body {
   background-color: darkred;
   transition: all 0.25ms ease;
 }
-.Capacity #myListCapacities .myCV #btnDownload:active {
+.Capacity #myListCapacities .col-lg-4 .myCV #btnDownload:active {
   transform: translateY(8px);
 }
-.Capacity #myListCapacities .myCV #btnDownload a {
+.Capacity #myListCapacities .col-lg-4 .myCV #btnDownload a {
   font-size: 1.3em;
   text-decoration: none;
+}
+
+#starfield .modal-dialog .modal-content, #wellife .modal-dialog .modal-content {
+  color: azure;
+  background-image: url(../src/pict/modalBackground.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#starfield .modal-dialog .modal-content .btn-close, #wellife .modal-dialog .modal-content .btn-close {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#starfield .modal-dialog .modal-content .modal-header, #wellife .modal-dialog .modal-content .modal-header {
+  border: transparent;
+}
+#starfield .modal-dialog .modal-content .modal-header .modal-title, #wellife .modal-dialog .modal-content .modal-header .modal-title {
+  letter-spacing: 4px;
+  font-family: emizen;
+  font-size: 1.6em;
+}
+#starfield .modal-dialog .modal-content .modal-body, #wellife .modal-dialog .modal-content .modal-body {
+  border: transparent;
+}
+#starfield .modal-dialog .modal-content .modal-body .img-fluid, #wellife .modal-dialog .modal-content .modal-body .img-fluid {
+  height: 550px;
+}
+#starfield .modal-dialog .modal-content .modal-body .drivers, #wellife .modal-dialog .modal-content .modal-body .drivers {
+  font-family: olney;
+  font-size: 1.6em;
+}
+#starfield .modal-dialog .modal-content .modal-body .langages, #wellife .modal-dialog .modal-content .modal-body .langages {
+  display: flex;
+  flex-direction: row;
+  line-height: 80px;
+  padding: 10px;
+  justify-content: space-between;
+}
+#starfield .modal-dialog .modal-content .modal-body .langages .list .codes, #wellife .modal-dialog .modal-content .modal-body .langages .list .codes {
+  font-size: 1.5em;
+  font-family: linkStart;
+}
+#starfield .modal-dialog .modal-content .modal-footer, #wellife .modal-dialog .modal-content .modal-footer {
+  border: transparent;
+}
+#starfield .modal-dialog .modal-content .modal-footer p, #wellife .modal-dialog .modal-content .modal-footer p {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 1.3em;
+  font-family: olney;
 }
 
 #contact {
