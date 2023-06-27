@@ -75,7 +75,7 @@ body {
   background-color: rgb(31, 31, 31);
 }
 .aboutMe .about {
-  padding-top: 5px;
+  padding-top: 12px;
   color: azure;
   font-size: 2.1em;
   text-align: center;
@@ -166,12 +166,12 @@ body {
   padding: 20px;
   line-height: 80px;
 }
-.Capacity #myListCapacities .col-lg-8 .frontEnd, .Capacity #myListCapacities .col-lg-8 .backEnd {
+.Capacity #myListCapacities .col-lg-8 .front .frontEnd, .Capacity #myListCapacities .col-lg-8 .front .backEnd, .Capacity #myListCapacities .col-lg-8 .back .frontEnd, .Capacity #myListCapacities .col-lg-8 .back .backEnd {
   font-size: 1.7em;
   color: azure;
   font-family: olney;
 }
-.Capacity #myListCapacities .col-lg-8 .swiper-pagination-bullet {
+.Capacity #myListCapacities .col-lg-8 .front .swiper-pagination-bullet, .Capacity #myListCapacities .col-lg-8 .back .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   text-align: center;
@@ -181,7 +181,7 @@ body {
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
 }
-.Capacity #myListCapacities .col-lg-8 .swiper-pagination-bullet-active {
+.Capacity #myListCapacities .col-lg-8 .front .swiper-pagination-bullet-active, .Capacity #myListCapacities .col-lg-8 .back .swiper-pagination-bullet-active {
   color: #000000;
   background: #ffffff;
 }
@@ -193,10 +193,13 @@ body {
 .Capacity #myListCapacities .col-lg-4 .myCV .img-fluid {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: auto;
+  margin-left: -15px;
   border: 1px solid black;
 }
 .Capacity #myListCapacities .col-lg-4 .myCV #btnDownload {
-  width: 45%;
+  width: auto;
   padding: 10px;
   color: azure;
   cursor: pointer;
@@ -223,10 +226,14 @@ body {
   background-position: center;
   background-size: cover;
 }
-#starfield .modal-dialog .modal-content .btn-close, #wellife .modal-dialog .modal-content .btn-close, #eaglePC .modal-dialog .modal-content .btn-close {
-  position: relative;
-  top: 10px;
-  left: 10px;
+#starfield .modal-dialog .modal-content .btnClose, #wellife .modal-dialog .modal-content .btnClose, #eaglePC .modal-dialog .modal-content .btnClose {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  font-size: 1.6em;
+  color: azure;
+  border: transparent;
+  background: transparent;
 }
 #starfield .modal-dialog .modal-content .modal-header, #wellife .modal-dialog .modal-content .modal-header, #eaglePC .modal-dialog .modal-content .modal-header {
   border: transparent;
@@ -242,21 +249,6 @@ body {
 #starfield .modal-dialog .modal-content .modal-body .img-fluid, #wellife .modal-dialog .modal-content .modal-body .img-fluid, #eaglePC .modal-dialog .modal-content .modal-body .img-fluid {
   height: 550px;
 }
-#starfield .modal-dialog .modal-content .modal-body .drivers, #wellife .modal-dialog .modal-content .modal-body .drivers, #eaglePC .modal-dialog .modal-content .modal-body .drivers {
-  font-family: olney;
-  font-size: 1.6em;
-}
-#starfield .modal-dialog .modal-content .modal-body .langages, #wellife .modal-dialog .modal-content .modal-body .langages, #eaglePC .modal-dialog .modal-content .modal-body .langages {
-  display: flex;
-  flex-direction: row;
-  line-height: 80px;
-  padding: 10px;
-  justify-content: space-between;
-}
-#starfield .modal-dialog .modal-content .modal-body .langages .list .codes, #wellife .modal-dialog .modal-content .modal-body .langages .list .codes, #eaglePC .modal-dialog .modal-content .modal-body .langages .list .codes {
-  font-size: 1.5em;
-  font-family: linkStart;
-}
 #starfield .modal-dialog .modal-content .modal-footer, #wellife .modal-dialog .modal-content .modal-footer, #eaglePC .modal-dialog .modal-content .modal-footer {
   border: transparent;
   display: flex;
@@ -269,6 +261,7 @@ body {
   font-family: olney;
 }
 #starfield .modal-dialog .modal-content .modal-footer .hrefShowSite, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite {
+  text-align: center;
   display: flex;
   flex-direction: row;
 }
@@ -294,80 +287,35 @@ body {
   display: block;
   margin: 10px auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   border-radius: 40px;
   background-color: black;
   border: 1px solid black;
   padding: 20px;
 }
-#contact .contactModal #youContact #contactMe {
+#contact .contactModal #contactMe {
   margin-left: 10px;
   text-align: center;
 }
-#contact .contactModal #youContact input[type=text],
-#contact .contactModal #youContact textarea {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
+#contact .contactModal #contactMe .col-lg-6 input {
   width: 100%;
-  max-width: 710px;
+  padding: 10px;
+  margin: 10px auto;
   border-radius: 5px;
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
 }
-#contact .contactModal #youContact input[type=text]::-moz-placeholder, #contact .contactModal #youContact textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-#contact .contactModal #youContact input[type=text]::placeholder,
-#contact .contactModal #youContact textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-#contact .contactModal #youContact textarea {
-  resize: none;
-  height: 200px;
-}
-#contact .contactModal #myListContact {
-  display: block;
-  margin: 15px auto;
-  line-height: 45px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-#contact .contactModal #myListContact p {
-  color: azure;
-  font-size: 1.3em;
-  font-family: olney;
-}
-#contact .contactModal #myListContact .fa-regular, #contact .contactModal #myListContact .fa-solid {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  font-size: 1.6em;
-  width: 60px;
-  border-radius: 50%;
-  justify-content: center;
+#contact .contactModal #contactMe .col-lg-12 textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
   background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgb(255, 255, 255);
-}
-#contact .contactModal #myListContact .fa-phone, #contact .contactModal #myListContact .fa-envelope, #contact .contactModal #myListContact .fa-linkedin-in {
-  color: azure;
-}
-#contact .contactModal #myListContact .fa-brands {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  font-size: 1.6em;
-  width: 60px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgb(255, 255, 255);
+  color: white;
 }
 #contact .contactModal #btnSend {
   display: block;
-  margin: 0 auto;
-  margin-top: -20px;
+  margin: 0px auto;
   padding: 10px 20px;
   border: none;
   background-color: darkred;
@@ -380,6 +328,38 @@ body {
 #contact .contactModal #btnSend:active {
   transform: translateY(8px);
   background-color: #075509;
+}
+
+#sideCanvas {
+  height: 220px;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 0px 0px 0px 40px;
+  background-color: black;
+}
+#sideCanvas .offcanvas-body #btnCloseCanvas {
+  position: relative;
+  top: -10%;
+  left: 87%;
+  font-size: 1.8em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+#sideCanvas .offcanvas-body .containNav {
+  margin: -15px auto;
+  text-align: center;
+}
+#sideCanvas .offcanvas-body .containNav .navbar-nav {
+  line-height: 25px;
+}
+#sideCanvas .offcanvas-body .containNav .navbar-nav .nav-item a {
+  color: azure;
+  font-size: 1.6em;
+  font-family: linkStart;
+}
+#sideCanvas .offcanvas-body .containNav .navbar-nav .nav-item a:hover {
+  color: darkred;
 }
 
 @font-face {
@@ -401,4 +381,132 @@ body {
 @font-face {
   font-family: fastHand;
   src: url(fonts/FastHand.otf);
+}
+@media screen and (max-width: 1440px) {
+  .Capacity #myListCapacities .cv .myCV .img-fluid {
+    height: 800px;
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 1355px) {
+  #me .container-fluid .myProfil .myName {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1175px) {
+  #me .navbar .navbar-nav {
+    display: none;
+  }
+  #me .navbar #btnBars {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutMe #myStory img {
+    width: 100%;
+    height: auto;
+  }
+  .aboutMe .meIdentify {
+    line-height: 40px;
+  }
+  .Capacity #myListCapacities .cv .myCV .img-fluid {
+    height: 740px;
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .aboutMe .meIdentify {
+    margin: 10px auto;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: -15px;
+  }
+  .Capacity #myListCapacities .col-lg-8 .front .swiper-pagination-bullet {
+    margin: -90px auto;
+  }
+  .Capacity #myListCapacities .cv .myCV .img-fluid {
+    height: 780px;
+    max-width: 630px;
+  }
+  #myProjets #listProjets img {
+    margin: 10px auto;
+  }
+  #contact .contactModal .row #myListContact {
+    display: flex;
+    flex-direction: row;
+  }
+  #contact .contactModal .row #btnSend {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Capacity #myListCapacities .col-lg-8 .front .frontEnd {
+    text-align: center;
+  }
+  .Capacity #myListCapacities .col-lg-8 .back .backEnd {
+    text-align: center;
+  }
+  .Capacity #myListCapacities .cv .myCV .img-fluid {
+    height: 740px;
+    max-width: 450px;
+    display: block;
+    margin: auto;
+  }
+  #myProjets #listProjets .col-lg-4 {
+    margin: 15px auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  #starfield .modal-dialog .modal-content .modal-footer .langageUse, #wellife .modal-dialog .modal-content .modal-footer .langageUse, #eaglePC .modal-dialog .modal-content .modal-footer .langageUse {
+    text-align: center;
+  }
+  #starfield .modal-dialog .modal-content .modal-footer .hrefShowSite, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 855px) {
+  #me .container-fluid .myProfil .myName {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .aboutMe #myStory img {
+    height: 450px;
+  }
+  .Capacity #myListCapacities .col-lg-8 .front {
+    margin-bottom: 30px;
+  }
+  .Capacity #myListCapacities .col-lg-8 .front .swiper-pagination-bullet {
+    margin-bottom: -90px;
+  }
+  .Capacity #myListCapacities .col-lg-8 .front .img-fluid {
+    height: 100px;
+  }
+  .Capacity #myListCapacities .cv .myCV .img-fluid {
+    height: 780px;
+    max-width: 630px;
+  }
+  #starfield .modal-dialog .modal-content .modal-footer .langageUse p, #wellife .modal-dialog .modal-content .modal-footer .langageUse p, #eaglePC .modal-dialog .modal-content .modal-footer .langageUse p {
+    font-size: 1.2em;
+  }
+  #starfield .modal-dialog .modal-content .modal-footer .hrefShowSite p, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite p, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite p {
+    font-size: 1em;
+  }
+  #contact .contactModal form {
+    margin-left: -15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #starfield .modal-dialog .modal-content .modal-footer .langageUse p, #wellife .modal-dialog .modal-content .modal-footer .langageUse p, #eaglePC .modal-dialog .modal-content .modal-footer .langageUse p {
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+  #starfield .modal-dialog .modal-content .modal-footer .hrefShowSite, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite {
+    margin-left: -10px;
+  }
+  #starfield .modal-dialog .modal-content .modal-footer .hrefShowSite p, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite p, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite p {
+    font-size: 0.8em;
+  }
 }/*# sourceMappingURL=index.css.map */

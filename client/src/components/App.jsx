@@ -5,6 +5,7 @@ import Capacity from './Capacity'
 import MyProjets from './MyProjets'
 import Contact from './Contact'
 import Modal from './Modal'
+import Offcanvas from './Offcanvas'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <MyProjets />
         <Contact />
         <Modal />
+        <Offcanvas />
     </div>
   )
 }

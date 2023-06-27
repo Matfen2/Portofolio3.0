@@ -8,7 +8,7 @@ export default function AboutMe() {
         <h1 className="about">A propos de moi</h1>
         <div className="row" id="myStory">
           <div className="col-lg-5 col-md-12">
-                <img src={pictMe} alt="photoMe" className="img-fluid" />
+                <img src={pictMe} alt="photoMe" className="img-fluid w-100" />
           </div>
           <div className="col-lg-7 col-md-12">
             <div className="meIdentify">

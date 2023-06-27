@@ -21,10 +21,13 @@ export default function Modal() {
           <div class="modal-content">
             <button
               type="button"
-              class="btn-close"
+              class="btnClose"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+              style={{ color: "azure" }}
+            >
+              <i class="fas fa-times"></i>
+            </button>
             <div class="modal-header">
               <h5
                 class="modal-title"
@@ -88,10 +91,12 @@ export default function Modal() {
           <div class="modal-content">
             <button
               type="button"
-              class="btn-close"
+              class="btnClose"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+            >
+              <i class="fas fa-times"></i>
+            </button>
             <div class="modal-header">
               <h5
                 class="modal-title"
@@ -151,10 +156,12 @@ export default function Modal() {
           <div class="modal-content">
             <button
               type="button"
-              class="btn-close"
+              class="btnClose"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+            >
+              <i class="fas fa-times"></i>
+            </button>
             <div class="modal-header">
               <h5
                 class="modal-title"
